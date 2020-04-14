@@ -6,7 +6,7 @@ def calculateEstimate(data, converted_time, type='impact'):
     if type == 'impact':
         my_dict['currentlyInfected'] = int(my_dict['reportedCases'] * 10)
         my_dict['infectionsByRequestedTime'] = my_dict['currentlyInfected'] * factor
-    elif type == 'severImpact':
+    elif type == 'severeImpact':
         my_dict['currentlyInfected'] = int(data['reportedCases'] * 50)
         my_dict['infectionsByRequestedTime'] = int(
             my_dict['currentlyInfected'] * factor)
